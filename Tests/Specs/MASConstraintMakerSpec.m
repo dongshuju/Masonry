@@ -91,12 +91,12 @@ SpecBegin(MASConstraintMaker) {
     //left
     viewConstraint = composite.childConstraints[0];
     expect(viewConstraint.firstViewAttribute.view).to.beIdenticalTo(maker.view);
-    expect(viewConstraint.firstViewAttribute.layoutAttribute).to.equal(NSLayoutAttributeLeft);
+    expect(viewConstraint.firstViewAttribute.layoutAttribute).to.equal(NSLayoutAttributeLeading);
     
     //right
     viewConstraint = composite.childConstraints[1];
     expect(viewConstraint.firstViewAttribute.view).to.beIdenticalTo(maker.view);
-    expect(viewConstraint.firstViewAttribute.layoutAttribute).to.equal(NSLayoutAttributeRight);
+    expect(viewConstraint.firstViewAttribute.layoutAttribute).to.equal(NSLayoutAttributeTrailing);
     
     //top
     viewConstraint = composite.childConstraints[2];
@@ -221,7 +221,7 @@ SpecBegin(MASConstraintMaker) {
     
     MASViewConstraint *viewConstraint = composite.childConstraints[2];
     expect(viewConstraint.firstViewAttribute.view).to.beIdenticalTo(maker.view);
-    expect(viewConstraint.firstViewAttribute.layoutAttribute).to.equal(NSLayoutAttributeLeft);
+    expect(viewConstraint.firstViewAttribute.layoutAttribute).to.equal(NSLayoutAttributeLeading);
     expect(viewConstraint.delegate).to.beIdenticalTo(composite);
 }
 

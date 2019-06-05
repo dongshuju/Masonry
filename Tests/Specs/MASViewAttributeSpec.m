@@ -15,7 +15,7 @@ SpecBegin(MASViewAttributeSpec){
 
 - (void)setUp {
     view = [MAS_VIEW new];
-    viewAttribute = [[MASViewAttribute alloc] initWithView:view layoutAttribute:NSLayoutAttributeLeft];
+    viewAttribute = [[MASViewAttribute alloc] initWithView:view layoutAttribute:NSLayoutAttributeLeading];
 }
 
 - (void)testIsEqual {
@@ -30,11 +30,11 @@ SpecBegin(MASViewAttributeSpec){
 
 
     //should return NO when the view is the same but the layoutAttribute is different
-    otherViewAttribute = [[MASViewAttribute alloc] initWithView:viewAttribute.view layoutAttribute:NSLayoutAttributeRight];
+    otherViewAttribute = [[MASViewAttribute alloc] initWithView:viewAttribute.view layoutAttribute:NSLayoutAttributeTrailing];
     expect([viewAttribute isEqual:otherViewAttribute]).to.equal(NO);
 
     //should return NO when the view is different and the layoutAttribute is different
-    otherViewAttribute = [[MASViewAttribute alloc] initWithView:otherView layoutAttribute:NSLayoutAttributeRight];
+    otherViewAttribute = [[MASViewAttribute alloc] initWithView:otherView layoutAttribute:NSLayoutAttributeTrailing];
     expect([viewAttribute isEqual:otherViewAttribute]).to.equal(NO);
 
     //should return NO when non view attribute passed", ^{
@@ -52,11 +52,11 @@ SpecBegin(MASViewAttributeSpec){
     expect([viewAttribute hash]).toNot.equal([otherViewAttribute hash]);
 
     //should return a different hash when the view is the same but the layoutAttribute is different
-    otherViewAttribute = [[MASViewAttribute alloc] initWithView:viewAttribute.view layoutAttribute:NSLayoutAttributeRight];
+    otherViewAttribute = [[MASViewAttribute alloc] initWithView:viewAttribute.view layoutAttribute:NSLayoutAttributeTrailing];
     expect([viewAttribute hash]).toNot.equal([otherViewAttribute hash]);
 
     //should return a different hash when the view is different and the layoutAttribute is different
-    otherViewAttribute = [[MASViewAttribute alloc] initWithView:otherView layoutAttribute:NSLayoutAttributeRight];
+    otherViewAttribute = [[MASViewAttribute alloc] initWithView:otherView layoutAttribute:NSLayoutAttributeTrailing];
     expect([viewAttribute hash]).toNot.equal([otherViewAttribute hash]);
 }
 

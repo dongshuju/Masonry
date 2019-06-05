@@ -37,7 +37,7 @@
 #pragma mark - NSLayoutAttribute properties
 
 - (MASViewAttribute *)mas_left {
-    return [[MASViewAttribute alloc] initWithView:self layoutAttribute:NSLayoutAttributeLeft];
+    return [[MASViewAttribute alloc] initWithView:self layoutAttribute:NSLayoutAttributeLeading];
 }
 
 - (MASViewAttribute *)mas_top {
@@ -45,7 +45,7 @@
 }
 
 - (MASViewAttribute *)mas_right {
-    return [[MASViewAttribute alloc] initWithView:self layoutAttribute:NSLayoutAttributeRight];
+    return [[MASViewAttribute alloc] initWithView:self layoutAttribute:NSLayoutAttributeTrailing];
 }
 
 - (MASViewAttribute *)mas_bottom {
@@ -97,11 +97,11 @@
 #if TARGET_OS_IPHONE || TARGET_OS_TV
 
 - (MASViewAttribute *)mas_leftMargin {
-    return [[MASViewAttribute alloc] initWithView:self layoutAttribute:NSLayoutAttributeLeftMargin];
+    return [[MASViewAttribute alloc] initWithView:self layoutAttribute:NSLayoutAttributeLeadingMargin];
 }
 
 - (MASViewAttribute *)mas_rightMargin {
-    return [[MASViewAttribute alloc] initWithView:self layoutAttribute:NSLayoutAttributeRightMargin];
+    return [[MASViewAttribute alloc] initWithView:self layoutAttribute:NSLayoutAttributeTrailingMargin];
 }
 
 - (MASViewAttribute *)mas_topMargin {
@@ -141,11 +141,11 @@
 }
 
 - (MASViewAttribute *)mas_safeAreaLayoutGuideLeft {
-    return [[MASViewAttribute alloc] initWithView:self item:self.safeAreaLayoutGuide layoutAttribute:NSLayoutAttributeLeft];
+    return [[MASViewAttribute alloc] initWithView:self item:self.safeAreaLayoutGuide layoutAttribute:NSLayoutAttributeLeading];
 }
 
 - (MASViewAttribute *)mas_safeAreaLayoutGuideRight {
-    return [[MASViewAttribute alloc] initWithView:self item:self.safeAreaLayoutGuide layoutAttribute:NSLayoutAttributeRight];
+    return [[MASViewAttribute alloc] initWithView:self item:self.safeAreaLayoutGuide layoutAttribute:NSLayoutAttributeTrailing];
 }
 
 - (MASViewAttribute *)mas_safeAreaLayoutGuideTop {

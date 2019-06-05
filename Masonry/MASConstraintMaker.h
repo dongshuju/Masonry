@@ -10,8 +10,8 @@
 #import "MASUtilities.h"
 
 typedef NS_OPTIONS(NSInteger, MASAttribute) {
-    MASAttributeLeft = 1 << NSLayoutAttributeLeft,
-    MASAttributeRight = 1 << NSLayoutAttributeRight,
+    MASAttributeLeft = 1 << NSLayoutAttributeLeading,
+    MASAttributeRight = 1 << NSLayoutAttributeTrailing,
     MASAttributeTop = 1 << NSLayoutAttributeTop,
     MASAttributeBottom = 1 << NSLayoutAttributeBottom,
     MASAttributeLeading = 1 << NSLayoutAttributeLeading,
@@ -27,8 +27,8 @@ typedef NS_OPTIONS(NSInteger, MASAttribute) {
     
 #if TARGET_OS_IPHONE || TARGET_OS_TV
     
-    MASAttributeLeftMargin = 1 << NSLayoutAttributeLeftMargin,
-    MASAttributeRightMargin = 1 << NSLayoutAttributeRightMargin,
+    MASAttributeLeftMargin = 1 << NSLayoutAttributeLeadingMargin,
+    MASAttributeRightMargin = 1 << NSLayoutAttributeTrailingMargin,
     MASAttributeTopMargin = 1 << NSLayoutAttributeTopMargin,
     MASAttributeBottomMargin = 1 << NSLayoutAttributeBottomMargin,
     MASAttributeLeadingMargin = 1 << NSLayoutAttributeLeadingMargin,

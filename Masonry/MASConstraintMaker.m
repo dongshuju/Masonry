@@ -136,7 +136,7 @@
 }
 
 - (MASConstraint *)left {
-    return [self addConstraintWithLayoutAttribute:NSLayoutAttributeLeft];
+    return [self addConstraintWithLayoutAttribute:NSLayoutAttributeLeading];
 }
 
 - (MASConstraint *)top {
@@ -144,7 +144,7 @@
 }
 
 - (MASConstraint *)right {
-    return [self addConstraintWithLayoutAttribute:NSLayoutAttributeRight];
+    return [self addConstraintWithLayoutAttribute:NSLayoutAttributeTrailing];
 }
 
 - (MASConstraint *)bottom {
@@ -196,11 +196,11 @@
 #if TARGET_OS_IPHONE || TARGET_OS_TV
 
 - (MASConstraint *)leftMargin {
-    return [self addConstraintWithLayoutAttribute:NSLayoutAttributeLeftMargin];
+    return [self addConstraintWithLayoutAttribute:NSLayoutAttributeLeadingMargin];
 }
 
 - (MASConstraint *)rightMargin {
-    return [self addConstraintWithLayoutAttribute:NSLayoutAttributeRightMargin];
+    return [self addConstraintWithLayoutAttribute:NSLayoutAttributeTrailingMargin];
 }
 
 - (MASConstraint *)topMargin {

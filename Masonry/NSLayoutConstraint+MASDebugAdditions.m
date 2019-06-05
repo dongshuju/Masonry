@@ -33,9 +33,9 @@
     dispatch_once(&once, ^{
         descriptionMap = @{
             @(NSLayoutAttributeTop)      : @"top",
-            @(NSLayoutAttributeLeft)     : @"left",
+            @(NSLayoutAttributeLeading)     : @"left",
             @(NSLayoutAttributeBottom)   : @"bottom",
-            @(NSLayoutAttributeRight)    : @"right",
+            @(NSLayoutAttributeTrailing)    : @"right",
             @(NSLayoutAttributeLeading)  : @"leading",
             @(NSLayoutAttributeTrailing) : @"trailing",
             @(NSLayoutAttributeWidth)    : @"width",
@@ -47,8 +47,8 @@
             @(NSLayoutAttributeLastBaseline) : @"lastBaseline",
 
 #if TARGET_OS_IPHONE || TARGET_OS_TV
-            @(NSLayoutAttributeLeftMargin)           : @"leftMargin",
-            @(NSLayoutAttributeRightMargin)          : @"rightMargin",
+            @(NSLayoutAttributeLeadingMargin)           : @"leftMargin",
+            @(NSLayoutAttributeTrailingMargin)          : @"rightMargin",
             @(NSLayoutAttributeTopMargin)            : @"topMargin",
             @(NSLayoutAttributeBottomMargin)         : @"bottomMargin",
             @(NSLayoutAttributeLeadingMargin)        : @"leadingMargin",

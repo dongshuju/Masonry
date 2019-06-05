@@ -20,14 +20,14 @@
 /**
  *	Modifies the NSLayoutConstraint constant,
  *  only affects MASConstraints in which the first item's NSLayoutAttribute is one of the following
- *  NSLayoutAttributeTop, NSLayoutAttributeLeft, NSLayoutAttributeBottom, NSLayoutAttributeRight
+ *  NSLayoutAttributeTop, NSLayoutAttributeLeading, NSLayoutAttributeBottom, NSLayoutAttributeTrailing
  */
 - (MASConstraint * (^)(MASEdgeInsets insets))insets;
 
 /**
  *	Modifies the NSLayoutConstraint constant,
  *  only affects MASConstraints in which the first item's NSLayoutAttribute is one of the following
- *  NSLayoutAttributeTop, NSLayoutAttributeLeft, NSLayoutAttributeBottom, NSLayoutAttributeRight
+ *  NSLayoutAttributeTop, NSLayoutAttributeLeading, NSLayoutAttributeBottom, NSLayoutAttributeTrailing
  */
 - (MASConstraint * (^)(CGFloat inset))inset;
 
@@ -162,14 +162,14 @@
 /**
  *	Modifies the NSLayoutConstraint constant,
  *  only affects MASConstraints in which the first item's NSLayoutAttribute is one of the following
- *  NSLayoutAttributeTop, NSLayoutAttributeLeft, NSLayoutAttributeBottom, NSLayoutAttributeRight
+ *  NSLayoutAttributeTop, NSLayoutAttributeLeading, NSLayoutAttributeBottom, NSLayoutAttributeTrailing
  */
 - (void)setInsets:(MASEdgeInsets)insets;
 
 /**
  *	Modifies the NSLayoutConstraint constant,
  *  only affects MASConstraints in which the first item's NSLayoutAttribute is one of the following
- *  NSLayoutAttributeTop, NSLayoutAttributeLeft, NSLayoutAttributeBottom, NSLayoutAttributeRight
+ *  NSLayoutAttributeTop, NSLayoutAttributeLeading, NSLayoutAttributeBottom, NSLayoutAttributeTrailing
  */
 - (void)setInset:(CGFloat)inset;
 

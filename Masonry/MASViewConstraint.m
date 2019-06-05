@@ -240,7 +240,6 @@ static char kInstalledConstraintsKey;
 - (void)setInsets:(MASEdgeInsets)insets {
     NSLayoutAttribute layoutAttribute = self.firstViewAttribute.layoutAttribute;
     switch (layoutAttribute) {
-        case NSLayoutAttributeLeft:
         case NSLayoutAttributeLeading:
             self.layoutConstant = insets.left;
             break;
@@ -250,7 +249,6 @@ static char kInstalledConstraintsKey;
         case NSLayoutAttributeBottom:
             self.layoutConstant = -insets.bottom;
             break;
-        case NSLayoutAttributeRight:
         case NSLayoutAttributeTrailing:
             self.layoutConstant = -insets.right;
             break;
